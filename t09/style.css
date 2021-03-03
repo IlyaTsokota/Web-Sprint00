@@ -1,0 +1,42 @@
+a[href*="://www"] {
+	color: green;
+}
+
+a[target*="_blank"] {
+	position: relative;
+}
+
+a[target*="_blank"]::after,
+a[href*="://www"]::after {
+	content: "\21D2";
+	position: absolute;
+	top: -3px;
+	right: -14px;
+	color: coral;
+	text-decoration: underline;
+	text-decoration-color: blue;
+}
+
+a[href*="://www"]::after {
+	text-decoration-color: green;
+}
+
+a[href^="http://"]::before {
+	content: "\00D7";
+	padding-right: 10px;
+	color: red;
+}
+
+a[href^="https://"]::before {
+	content: "\00BB";
+	padding-right: 10px;
+}
+
+
+a[href$="a"]:hover::after {
+	content: "\2026 last symbol is a";
+	color: coral;
+	font-style: italic;
+	top: 0;
+	right: -125%;
+}

@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+}
+
+.stones__table {
+	display: block;
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #cccccc;
+}
+
+.stones__head {
+	width: 100%;
+	color: #fff;
+	background: #000;
+
+
+}
+
+
+.stones__body-row td {
+	border-left: 2px solid #cccccc;
+	border-right: 2px solid #cccccc;
+	text-align: center;
+	padding: 10px;
+}
+
+.stones__body-row:not(:first-child):not(:last-child) {
+	border: 2px solid #cccccc;
+}
+
+.stones__body-row:nth-child(1) {
+	background-color: blue;
+}
+
+.stones__body-row:nth-child(2) {
+	background-color: green;
+}
+
+.stones__body-row:nth-child(3) {
+	background-color: orange;
+}
+
+.stones__body-row:nth-child(4) {
+	background-color: yellow;
+}
+
+.stones__body-row:nth-child(5) {
+	background-color: red;
+}
+
+.stones__body-row:nth-child(6) {
+	background-color: purple;
+}
+
+
+.stones__body-img>img {
+	min-width: 100%;
+	height: 120px;
+	border-radius: 25px;
+}
+
+.stones__footer {
+	display: block;
+}
+
+.stones__footer tr {
+	display: flex;
+	margin: 15px 0;
+	justify-content: center;
+}

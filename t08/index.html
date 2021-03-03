@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>Superhero Form</h1>
+	<div class="forms">
+		<form class="form">
+			<fieldset class="about__form">
+				<legend>About the Superhero</legend>
+				<div class="about__form-inputs">
+					<label for="name" class="about__form-label">
+						Real Name
+						<input type="text" name="name" id="name" placeholder="Superhero real name"
+							class="about__form-input" required />
+					</label>
+					<label for="supername" class="about__form-label">
+						Superhero Name
+						<input type="text" name="supername" id="supername" placeholder="Superhero alias"
+							class="about__form-input" />
+					</label>
+					<label for="age" class="about__form-label">
+						Age
+						<input type="number" id="age" name="age" min="1" max="999" step="1" class="about__form-input" />
+					</label>
+				</div>
+				<label for="about" class="about__form-label">
+					About
+					<textarea id="about" name="about" cols="70" rows="5" maxlength="500"
+						placeholder="Inforamtion about the superhero? max 500 symbols"></textarea>
+				</label>
+				<label for="photo" class="about__form-label">
+					Photo:
+					<input type="file" id="photo" name="photo">
+				</label>
+			</fieldset>
+			<fieldset class="power__form">
+				<legend>About the Superhero</legend>
+				<div class="power__form-checkboxes">
+					<div>
+						<input type="checkbox" id="telekinesis" name="telekinesis">
+						<label for="telekinesis">Telekinesis</label>
+					</div>
+					<div>
+						<input type="checkbox" id="strength" name="strength">
+						<label for="strength">Super strength or speed</label>
+					</div>
+					<div>
+						<input type="checkbox" id="shapeshifting" name="shapeshifting">
+						<label for="shapeshifting">Shapeshifting</label>
+					</div>
+					<div>
+						<input type="checkbox" id="flight" name="flight">
+						<label for="flight">Flight</label>
+					</div>
+					<div>
+						<input type="checkbox" id="elemental" name="elemental">
+						<label for="elemental">Elemental control</label>
+					</div>
+					<div>
+						<input type="checkbox" id="other" name="other">
+						<label for="other">Other</label>
+					</div>
+				</div>
+				<label for="level" class="power__form-label">
+					Level of control:
+					<input type="range" id="level" name="level" min="0" max="10" step="1" value="1">
+				</label>
+			</fieldset>
+			<fieldset class="origin__form">
+				<legend>About the Superhero</legend>
+				<div class="origin__form-radios">
+					<div>
+						<input type="radio" id="unknown" name="origin">
+						<label for="unknown">Unknown</label>
+					</div>
+					<div>
+						<input type="radio" id="freak" name="origin">
+						<label for="freak">Freak lab accident</label>
+					</div>
+					<div>
+						<input type="radio" id="wise" name="origin">
+						<label for="wise">Choose by an ancient wise being</label>
+					</div>
+					<div>
+						<input type="radio" id="not_human" name="origin">
+						<label for="not_human">The superhero is not human</label>
+					</div>
+					<div>
+						<input type="radio" id="other" name="origin">
+						<label for="other">Other</label>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form__btns">
+				<button type="reset">Clear</button>
+				<button type="submit">Send</button>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

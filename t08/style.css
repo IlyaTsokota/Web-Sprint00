@@ -1,0 +1,56 @@
+.form {
+	padding: 20px;
+	border: 2px solid #ccc;
+
+}
+
+.form fieldset {
+	padding: 20px;
+	border: 2px solid #ccc;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+.about__form-label:not(:first-child) {
+	display: inline-block;
+	margin-top: 15px;
+}
+
+
+.power__form-checkboxes {
+	display: flex;
+}
+
+.power__form-checkboxes div {
+	display: flex;
+}
+
+.power__form-label {
+	margin-top: 15px;
+	display: flex;
+}
+
+.power__form-label input {
+	margin-top: -2px;
+
+}
+
+.origin__form-radios {
+	display: flex;
+}
+
+.origin__form-radios div {
+	display: flex;
+}
+
+.form__btns {
+	margin-top: 20px;
+}
+
+.form__btns button {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	text-transform: uppercase;
+}
